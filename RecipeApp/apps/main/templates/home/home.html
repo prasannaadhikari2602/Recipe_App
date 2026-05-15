@@ -1,5 +1,72 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block title %}Recipe App{% endblock %}
-{% block content %}
-<h1 class="text-6xl font-sans text-blue-700">Hello from Home Page.</h1>
+
+{% block navigation %}
+<nav class="h-20 bg-white shadow-sm">
+    <div class="flex justify-between items-center h-full px-8">
+
+        <!-- Left: Logo -->
+        <div class="flex items-center gap-5">
+            <img
+                src="{% static 'images/logo.png' %}"
+                alt="Recipio logo"
+                class="h-10"
+            >
+            <h1 class="text-2xl font-medium text-black">
+                Recipio
+            </h1>
+        </div>
+
+        <!-- Middle: Search -->
+         <div class="flex justify-center items-center relative">
+            <input type="text" placeholder="Search recipe here....." class="h-10 border-2 border-gray-400 px-5 rounded-sm">
+            <button class="absolute right-2">
+                <img src="{% static 'icons/search_black.png'%}" class="h-5">
+            </button>
+         </div>
+
+        <!-- Right: Actions -->
+        <div class="flex items-center gap-10">
+
+            <!-- Theme Toggle -->
+            <button
+                type="button"
+                class="h-8 w-8 flex items-center justify-center rounded-full
+                       hover:bg-gray-300 transition"
+                aria-label="Toggle theme"
+            >
+                <img
+                    src="{% static 'icons/moon.png' %}"
+                    alt="Theme icon"
+                    class="h-5 w-5"
+                >
+            </button>
+
+            <!-- Auth Buttons -->
+            <div class="flex items-center gap-5">
+                <a
+                    href="#"
+                    class="flex items-center justify-center h-10 px-5
+                           border-2 border-blue-400 text-blue-400 rounded-sm
+                           hover:bg-blue-400 hover:text-white
+                           transition"
+                >
+                    Login
+                </a>
+
+                <a
+                    href="#"
+                    class="flex items-center justify-center h-10 px-5
+                           bg-blue-400 text-white rounded-sm
+                           hover:bg-blue-500 transition"
+                >
+                    Signup
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
 {% endblock %}
