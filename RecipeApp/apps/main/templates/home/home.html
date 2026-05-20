@@ -76,22 +76,22 @@
             </td>
 
             <!-- Title -->
-            <td class="px-5 py-4 font-semibold text-gray-900 whitespace-normal max-w-[150px] break-words">
+            <td class="px-5 py-4 font-semibold text-gray-900 whitespace-normal max-w-37.5 wrap-break">
               {{ recipe.title }}
             </td>
 
             <!-- Description -->
-            <td class="px-5 py-4 text-gray-700 whitespace-normal max-w-[250px] break-words leading-relaxed">
+            <td class="px-5 py-4 text-gray-700 whitespace-normal max-w-37.5 wrap-break leading-relaxed">
               {{ recipe.description }}
             </td>
 
             <!-- Ingredients -->
-            <td class="px-5 py-4 text-gray-700 whitespace-normal max-w-[250px] break-words leading-relaxed">
+            <td class="px-5 py-4 text-gray-700 whitespace-normal max-w-37.5 wrap-break leading-relaxed">
               {{ recipe.ingredients }}
             </td>
 
             <!-- Instructions -->
-            <td class="px-5 py-4 text-gray-700 whitespace-normal max-w-[300px] break-words leading-relaxed">
+            <td class="px-5 py-4 text-gray-700 whitespace-normal max-w-37.5 wrap-break leading-relaxed">
               {{ recipe.instruction }}
             </td>
 
@@ -116,12 +116,12 @@
             <!-- Actions -->
             <td class="px-5 py-4 space-y-2">
 
-              <a href="{% url 'edit_recipe' recipe.id %}"
+              <a href="#"
                  class="block text-center px-3 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600 transition">
                 Edit
               </a>
 
-              <a href="{% url 'delete_recipe' recipe.id %}"
+              <a href="#"
                  class="block text-center px-3 py-1 text-xs font-semibold text-white bg-red-500 rounded-md hover:bg-red-600 transition">
                 Delete
               </a>

@@ -312,6 +312,9 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-37\.5 {
+    max-width: calc(var(--spacing) * 37.5);
+  }
   .max-w-\[150px\] {
     max-width: 150px;
   }
